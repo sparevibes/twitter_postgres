@@ -3,7 +3,7 @@
 # process command line args
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument(postgresql://:postgres:pass@localhost:22072/, required=True)
+parser.add_argument('--db', required=True)
 parser.add_argument('--inputs',nargs='+',required=True)
 parser.add_argument('--print_every',type=int,default=1000)
 args = parser.parse_args()

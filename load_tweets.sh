@@ -3,7 +3,7 @@ test-data.zip
 '
 
 for file in $files; do
-    python3 load_tweets.py --db postgresql://postgres:pass@localhost:22072/postgres --inputs test-data.zip 
+    python3 load_tweets.py --db postgresql://postgres:pass@localhost:12073/postgres --inputs test-data.zip 
 done
 
 for file in $files; do
